@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>ارزیابی </h1>
         <div className="menu">
           <h3>
             <a
@@ -12,7 +13,7 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ارزیابی انتخاب نام فرزند
+              نام فرزند
             </a>
           </h3>
           <h3>
