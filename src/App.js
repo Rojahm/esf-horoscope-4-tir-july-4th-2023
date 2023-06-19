@@ -1,17 +1,24 @@
 import "./App.css";
+import Form from "./components/Form";
+import { useState } from "react";
 
 function App() {
+  const [showForm, setShowForm] = useState(false);
+  //toggle form
+  const toggleShowForm = () => {
+    setShowForm(!showForm);
+  };
   return (
     <div className="App">
       <header className="App-header">
         <h1>ارزیابی </h1>
-        <div className="menu">
+        <div className="menu mt-4">
           <h3>
             <a
               className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
+              target="_self"
               rel="noopener noreferrer"
+              onClick={toggleShowForm}
             >
               نام فرزند
             </a>
@@ -57,6 +64,7 @@ function App() {
             </a>
           </h3>
         </div>
+        {showForm && <Form onClick={toggleShowForm} />}
       </header>
     </div>
   );
