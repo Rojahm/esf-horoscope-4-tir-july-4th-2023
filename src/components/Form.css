@@ -1,0 +1,21 @@
+.Form div .col-4 {
+  font-size: smaller;
+  padding-bottom: 20px;
+}
+.Form .btn {
+  background-color: #ee6c4d;
+  color: #293241;
+  border: 2px solid #ee6c4d;
+  padding: 10px 25px;
+  transition: all 200ms ease-in-out;
+  font-family: "Lalezar", cursive;
+}
+.Form .btn:hover {
+  background-color: #293241;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #ee6c4d;
+}
+.Form h2 {
+  color: #293241ef;
+}
